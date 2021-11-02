@@ -9,3 +9,13 @@ const accountsSchema = new Schema({
 })
 
 mongoose.model('Accounts', accountsSchema);
+
+const feedbackSchema = new Schema({
+    email: String,
+    rating: Number,
+    message: String,
+    follow: String,
+    date: String,
+})
+
+mongoose.model('Feedback', feedbackSchema);
